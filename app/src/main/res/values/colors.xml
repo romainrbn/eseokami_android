@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b03e4f</color>
+    <color name="colorPrimaryDark">#7d2b38</color>
+    <color name="colorAccent">#b03e4f</color>
+    <color name="color_nav_bar">#694150</color>
+    <color name="blanc_casse">#ff8080</color>
+    <color name="customBlue">#2baac4</color>
+</resources>

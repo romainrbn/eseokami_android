@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/separator"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="51dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/inner_components_spacing"
+        android:background="@android:color/background_light"
+        android:text="Header"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_dark"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/desc_module"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark"
+        android:textSize="19sp" />
+
+    <TextView
+        android:id="@+id/kamiTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/go3v2"
+        android:text="TextView"
+        android:textColor="@color/colorPrimary"
+        android:textSize="19sp" />
+
+</LinearLayout>

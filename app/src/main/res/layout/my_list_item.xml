@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/inner_components_spacing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_content2" />
+
+    <TextView
+        android:id="@+id/list_content2"
+        android:layout_width="312dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@android:color/white"
+        android:clickable="false"
+
+        android:linksClickable="false"
+        android:longClickable="false"
+        android:paddingTop="1dip"
+        android:paddingBottom="1dip"
+        android:text="sample"
+
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/fonction_tv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fonction_tv"
+        android:layout_width="245dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@android:color/white"
+        android:clickable="false"
+
+        android:linksClickable="false"
+        android:longClickable="false"
+        android:paddingTop="1dip"
+        android:paddingBottom="1dip"
+        android:text="fonction"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/profilePicture"
+        app:layout_constraintTop_toBottomOf="@+id/list_content2" />
+
+</android.support.constraint.ConstraintLayout>

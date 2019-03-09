@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_today"
+            android:icon="@drawable/ic_today_black_24dp"
+            android:title="Aujourd'hui"/>
+        <item
+            android:id="@+id/nav_liste"
+            android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+            android:title="La liste"/>
+        <item
+            android:id="@+id/nav_activites"
+            android:icon="@drawable/ic_fitness_center_black_24dp"
+            android:title="Activités"/>
+        <item
+            android:id="@+id/nav_journee"
+            android:icon="@drawable/ic_view_day_black_24dp"
+            android:title="Programme de la journée"/>
+        <item
+            android:id="@+id/nav_billetterie"
+            android:icon="@drawable/ic_theaters_black_24dp"
+            android:title="Billetterie" />
+        <item
+            android:id="@+id/nav_hotline"
+            android:title="Hotline"
+            android:icon="@drawable/ic_local_phone_black_24dp"
+
+            />
+        <item
+            android:id="@+id/nav_cafeteria"
+            android:icon="@drawable/ic_local_dining_black_24dp"
+            android:title="Caféteria"/>
+        <item
+            android:id="@+id/nav_idees"
+            android:icon="@drawable/ic_lightbulb_outline_black_24dp"
+            android:title="Nos idées"/>
+        <item
+            android:id="@+id/nav_sponsors"
+            android:icon="@drawable/ic_mood_black_24dp"
+            android:title="Nos sponsors"/>
+        <item
+            android:id="@+id/nav_videos"
+            android:icon="@drawable/ic_ondemand_video_black_24dp"
+            android:title="Vidéos"/>
+        <item
+            android:id="@+id/nav_compte"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Compte et informations"/>
+        <item
+            android:id="@+id/nav_deconnexion"
+            android:icon="@drawable/ic_close_black_24dp"
+            android:title="Déconnexion"/>
+    </group>
+
+
+</menu>

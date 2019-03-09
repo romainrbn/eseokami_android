@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "433610724903",
+    "firebase_url": "https://eseokami.firebaseio.com",
+    "project_id": "eseokami",
+    "storage_bucket": "eseokami.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433610724903:android:1eff0397d927749a",
+        "android_client_info": {
+          "package_name": "com.eseokami.romainrabouan.eseokamijava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433610724903-nsp3limpg451joj98mao7acslq55nfh6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eseokami.romainrabouan.eseokamijava",
+            "certificate_hash": "66e78386f77b5674b0a6592232b2482c565e5324"
+          }
+        },
+        {
+          "client_id": "433610724903-6fdlgnb8ikem4g342o4imi4jn26rap2k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaHb2ssB8A7iZ7eNJhtaNxKUgQn27G_Ww"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433610724903-e8q9biojpfmmeomp3f49s1o1hoon2hag.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "433610724903-rau8414213cs7mg7udg8097bbl6b9cvq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.romainrbn.EseoKami"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
