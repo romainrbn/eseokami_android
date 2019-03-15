@@ -2,6 +2,7 @@
 **For a more detailed view of the final application, please see the [ESEOKAMI iOS App repository](https://github.com/romainrbn/eseokami_ios)**
 
 Android App for ESEOKAMI, a students union running for the campaign that will take place in April.
+<br/>
 **This app is still in development.**
 
 ## Features
