@@ -22,7 +22,7 @@ Android App for ESEOKAMI, a students union running for the campaign that will ta
 \
 
 
-- The app contains many animations created with [Lottie](https://github.com/airbnb/lottie-ios) (here is a preview of the iOS app) : \
+- The app contains many animations created with [Lottie](https://github.com/airbnb/lottie-ios) (here is a preview of [the iOS app](https://github.com/romainrbn/eseokami_ios)) : \
 <img src="watermelon_anim.gif" height="500"> <img src="notif_anim.gif" height="500"> <img src="conif_anim.gif" height="500">
 
 
