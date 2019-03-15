@@ -47,6 +47,7 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-database:16.1.0'
     implementation 'com.google.firebase:firebase-core:16.0.7'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
 
 
 }

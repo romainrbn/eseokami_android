@@ -1,5 +1,6 @@
 package com.eseokami.romainrabouan.eseokamijava;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
@@ -9,7 +10,10 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.text.InputType;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -50,6 +54,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+       // setupUI(findViewById(R.id.constraintParent));
+
         settings = getSharedPreferences(PREFS_LOGIN, 0);
 
         if (settings.getBoolean("TTT", true)) {
@@ -82,7 +88,15 @@ public class LoginActivity extends AppCompatActivity {
                 final String pass = passwordEditText.getText().toString();
                 final String urlString = String.format("http://api.pandfstudio.ovh/login?email=%s&password=%s", email, pass);
                 Log.d("EMAIL", urlString);
-                JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, urlString, null,
+
+                // TODO: delete
+                settings.edit().putString("userEmail", "romain.rabouan@reseau.eseo.fr").apply();
+                settings.edit().putString("userID", "romain.rabouan").apply();
+                settings.edit().putString("userFullName", "Romain Rabouan").apply();
+                // TODO: end
+
+                openMainActivity();
+                /*JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, urlString, null,
                         new Response.Listener<JSONObject>() {
 
                             @Override
@@ -118,15 +132,44 @@ public class LoginActivity extends AppCompatActivity {
                         public void onErrorResponse(VolleyError error) {
                             error.printStackTrace();
                         }
-                    });
+                    });*/
 
-                mQueue.add(request);
+              //  mQueue.add(request);
 
             }
 
         });
 
 
+    }
+
+    public static void hideSoftKeyboard(Activity activity) {
+        InputMethodManager inputMethodManager =
+                (InputMethodManager) activity.getSystemService(
+                        Activity.INPUT_METHOD_SERVICE);
+        inputMethodManager.hideSoftInputFromWindow(
+                activity.getCurrentFocus().getWindowToken(), 0);
+    }
+
+    public void setupUI(View view) {
+
+        // Set up touch listener for non-text box views to hide keyboard.
+        if (!(view instanceof EditText)) {
+            view.setOnTouchListener(new View.OnTouchListener() {
+                public boolean onTouch(View v, MotionEvent event) {
+                    hideSoftKeyboard(LoginActivity.this);
+                    return false;
+                }
+            });
+        }
+
+        //If a layout container, iterate over children and seed recursion.
+        if (view instanceof ViewGroup) {
+            for (int i = 0; i < ((ViewGroup) view).getChildCount(); i++) {
+                View innerView = ((ViewGroup) view).getChildAt(i);
+                setupUI(innerView);
+            }
+        }
     }
 
 

@@ -136,6 +136,8 @@ public class TodayFragment extends Fragment {
 
         }
 
+
+
         String pathForDatabase = usrID.replace(".", " ");
         if (pathForDatabase != null) {
             DatabaseReference reference = mReference.child("scores").child(pathForDatabase);
@@ -143,6 +145,7 @@ public class TodayFragment extends Fragment {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     if(dataSnapshot.hasChild("score")) {
+                        Log.d("POINTP", dataSnapshot.child("score").getValue().toString());
                         numberOfPtsTextView.setText(dataSnapshot.child("score").getValue().toString() + " points");
                     } else {
                         // Si pas de données, alors nbPts = 0
@@ -155,6 +158,9 @@ public class TodayFragment extends Fragment {
 
                 }
             });
+        } else {
+            numberOfPtsTextView.setText("Non connecté");
+
         }
 
 

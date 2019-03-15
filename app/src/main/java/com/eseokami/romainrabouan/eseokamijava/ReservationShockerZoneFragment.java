@@ -325,6 +325,7 @@ public class ReservationShockerZoneFragment extends Fragment {
                                                 public void onComplete(@Nullable DatabaseError databaseError, @NonNull DatabaseReference databaseReference) {
                                                     settings.edit().putBoolean("aReserveShocker", true).commit();
                                                     // Open the reservation fragment
+
                                                 }
                                             });
                                         }
