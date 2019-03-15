@@ -14,7 +14,8 @@ Android App for ESEOKAMI, a students union running for the campaign that will ta
 
 
 
--  The user can book his shuttle for a particular activity. The app automatically handles the number of reservations depending on the capacity of the shuttles. \
+-  The user can book his shuttle for a particular activity. The app automatically handles the number of reservations depending on the capacity of the shuttles.
+<br/>
 <img src="confirmation.jpg" height="500">
 
 - Another major feature is a food delivery system. We have a list of 26 restaurants in Angers, France, in which users from the school can order for free. 4 teams deliver the orders. They instantly receive in the app their orders for their defined list of restaurants. Here they can set the order as delivered, impossible or carried. The user sees in real time is order status in the app, until his order has been delivered. \
